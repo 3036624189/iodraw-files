@@ -1,0 +1,91 @@
+<mxfile host="www.iodraw.com" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0" version="24.7.17">
+  <diagram name="第 1 页" id="cvM3_ZIBBFf5s67Y5OJe">
+    <mxGraphModel dx="2040" dy="1937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-2" value="    A1 -" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="661" y="841" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-3" value=" B1[Raw Branch&lt;br&gt;Conv2D→BN→ReLU→Pool&lt;br&gt;Conv2D→BN→ReLU→AvgPool]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="771" y="881" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-4" value="" style="rounded=0;" edge="1" source="KiXWQGvihidDRmVi5Jsc-2" target="KiXWQGvihidDRmVi5Jsc-3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-5" value="    A2 -" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1091" y="1541" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-6" value=" B2[Ref Branch&lt;br&gt;Conv2D→BN→ReLU→Pool&lt;br&gt;Conv2D→BN→ReLU→AvgPool]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="951" y="1701" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-7" value="" style="rounded=0;" edge="1" source="KiXWQGvihidDRmVi5Jsc-5" target="KiXWQGvihidDRmVi5Jsc-6" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-8" value="    B1 -" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="481" y="1381" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-9" value=" C1[f_raw ∈ ℝ^{128}]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="291" y="1301" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-10" value="" style="rounded=0;" edge="1" source="KiXWQGvihidDRmVi5Jsc-8" target="KiXWQGvihidDRmVi5Jsc-9" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-11" value="    B2 -" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-279" y="-209" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-12" value=" C2[f_ref ∈ ℝ^{128}]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-389" y="-59" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-13" value="" style="rounded=0;" edge="1" source="KiXWQGvihidDRmVi5Jsc-11" target="KiXWQGvihidDRmVi5Jsc-12" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-14" value="    C1 -" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="961" y="281" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-15" value=" D[Fusion&lt;br&gt;f_fused = [f_raw; f_ref] ∈ ℝ^{256}]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="731" y="281" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-16" value="" style="rounded=0;" edge="1" source="KiXWQGvihidDRmVi5Jsc-14" target="KiXWQGvihidDRmVi5Jsc-15" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-17" value="    C2 -" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-59" y="621" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-18" value=" D" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="81" y="721" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-19" value="" style="rounded=0;" edge="1" source="KiXWQGvihidDRmVi5Jsc-17" target="KiXWQGvihidDRmVi5Jsc-18" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-20" value="    D -" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="621" y="-389" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-21" value=" E1[FC1: Linear(256→128)+ReLU+Dropout]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="701" y="-339" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-22" value="" style="rounded=0;" edge="1" source="KiXWQGvihidDRmVi5Jsc-20" target="KiXWQGvihidDRmVi5Jsc-21" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-23" value="    E1 -" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="361" y="-929" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-24" value=" E2[FC2: Linear(128→4)+Softmax]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="451" y="-959" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-25" value="" style="rounded=0;" edge="1" source="KiXWQGvihidDRmVi5Jsc-23" target="KiXWQGvihidDRmVi5Jsc-24" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-26" value="    E2 -" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="351" y="221" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-27" value=" F[y_pred ∈ ℝ⁴&lt;br&gt;管道高温老化等级]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="201" y="101" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KiXWQGvihidDRmVi5Jsc-28" value="" style="rounded=0;" edge="1" source="KiXWQGvihidDRmVi5Jsc-26" target="KiXWQGvihidDRmVi5Jsc-27" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
